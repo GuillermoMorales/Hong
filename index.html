@@ -32,7 +32,7 @@
 
     <div class="container"><!--Div que contiene al aside y al article-->
 
-        <article class="central"><!--Article que contiene la informacion principal o central-->
+        <div class="central"><!--Article que contiene la informacion principal o central-->
 
             <header><!--Encabezado que contiene el titulo y la parte del editor-->
                 <h1>HMLT5 Website Showcase</h1> 
@@ -65,7 +65,10 @@
             <div class="Acutalizate"><!--Bloque de suscripcion-->
                 <h2>Stay Updated</h2>
                 <p>Get daily articles in your inbox for free</p>
-                <input class="Email" type="email" placeholder="Insert email address"><input class="suscribete" type="submit" value="Suscribe!">
+                <form action="" method="POST"><!--Formulario de suscripcion-->
+                    <input type="email" placeholder="Insert Email" required>
+                    <button type="submit">Subscribe!</button>
+                </form>
             </div>
 
             <div class="links"><!--Bloque que contiene los demas contenidos relacionados-->
